@@ -76,12 +76,12 @@
     color: var(--line-black);
 }
 .visual .design_tit .line1 {
-    width: 835px;
+    width: 45%; /*835px*/
     height: 1px;
     background-color: var(--line-black);
 }
 .visual .design_tit .line2 {
-    width: 288px;
+    width: 30%; /* 288px; */
     height: 1px;
     background-color: var(--line-black);
 }
