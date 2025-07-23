@@ -88,12 +88,12 @@ html, body{
     --point-font-color: #0CBBF0;
     --bold-weight: 700;
     --Extra-bold-weight: 800;
-    --tit-size: 45px;
-    --sub-tit-size: 23px; 
+    --tit-size: 40px;
+    --sub-tit-size: 20px; 
     --tit-line-height: 1.2; 
-    --visual-size: 25vw;
-    --thank-size: 18vw;
-    --visual-sub-tit: 95px;
+    --visual-size: 20vw;
+    --thank-size: 13vw;
+    --visual-sub-tit: 80px;
     --vi-intro-size: 28px;
     --about-size:40px;
     --doo-txt-size: 20px;
