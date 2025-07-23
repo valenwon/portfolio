@@ -656,6 +656,7 @@ body.bg_black #fp-nav ul li:hover a::before{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 24px;
 }
 .doosan .list ul li a{
     display: block;
