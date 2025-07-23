@@ -259,7 +259,7 @@
 .index .list .index_wrap ul li a{ /*inner와 화살표의 정렬*/
     display: flex;
     justify-content: space-between;
-    padding: 35px 0 10px 0;
+    padding: 35px 0 10px 10px;
     border-bottom: 1px solid #fff;
     align-items: flex-end;
 }
@@ -268,8 +268,7 @@
 }
 .index .list .index_wrap ul li a .arrow::after{ /*화살표*/
     content: "";
-    position: absolute;
-    
+    position: absolute; 
 }
 .index .list .index_wrap ul li:first-child a{
     border-top: 1px solid #fff;
@@ -285,7 +284,7 @@
     line-height: 1;
 }
 .index .list .index_wrap ul li a .inner h4{
-    width: calc(100% - 83px);
+    width: calc(100% - 69px);
     font-size: var(--sub-tit-size);
     font-weight: var(--bold-weight);
 }
@@ -293,10 +292,28 @@
 .index .list .index_wrap ul li a:hover{
     background-color: var(--main-font-color);
 }
-.index .list .index_wrap ul li a:hover .inner,
-.index .list .index_wrap ul li a:hover p{
+.index .list .index_wrap ul li a:hover .inner{
     color: var(--tit-font-color);
 }
+
+.index .list .index_wrap ul li a .arrow{
+    position: relative;
+}
+.index .list .index_wrap ul li a .arrow::after{
+    content: "";
+    position: absolute;
+    left: -51px;
+    top: -42px;
+    width: 41px;
+    height: 41px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_96_194' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='41' height='41'%3E%3Crect width='41' height='41' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_96_194)'%3E%3Cpath d='M27.6325 22.2083H6.8335V18.7916H27.6325L18.0658 9.22492L20.5002 6.83325L34.1668 20.4999L20.5002 34.1666L18.0658 31.7749L27.6325 22.2083Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.index .list .index_wrap ul li a:hover .arrow::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_97_247' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='41' height='41'%3E%3Crect width='41' height='41' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_97_247)'%3E%3Cpath d='M27.6322 22.2083H6.83325V18.7916H27.6322L18.0655 9.22492L20.4999 6.83325L34.1666 20.4999L20.4999 34.1666L18.0655 31.7749L27.6322 22.2083Z' fill='%23101010'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
 /********* #fp-nav ********/
 
 #fp-nav.fp-left {
@@ -305,7 +322,6 @@
 #fp-nav ul li .fp-tooltip { /*글자*/
     color: transparent;
 }
-
 #fp-nav ul li a {
     position: absolute; /* li기준으로 정렬, a태그가 fp-tooltip까지 감싸야 돼서 absolute로 바꿔줌 */
     left: 0;
